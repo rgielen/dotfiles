@@ -5,10 +5,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Shortcuts
-alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
-alias m="mysql -uroot"
 alias l="ls -l"
 alias la="ls -lahT"
 alias ls="command ls -G"
