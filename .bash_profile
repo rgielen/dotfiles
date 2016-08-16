@@ -13,10 +13,6 @@ shopt -s histappend
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
-# Prefer US English and use UTF-8
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US"
-
 # Add tab completion for many more commands (use: brew install bash-completion)
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
