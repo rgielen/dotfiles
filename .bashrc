@@ -1,1 +1,1 @@
-source ~/Projects/dotfiles/.bash_profile
+source ~/dotfiles/.bash_profile

@@ -1,5 +1,5 @@
 # Load ~/.bash_prompt, ~/.exports, and ~/.aliases
-for file in ~/Projects/dotfiles/.{bash_prompt,exports,aliases,custom}; do
+for file in ~/dotfiles/.{bash_prompt,exports,aliases,custom}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
