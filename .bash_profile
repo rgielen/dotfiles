@@ -13,9 +13,9 @@ shopt -s histappend
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
-# Add tab completion for many more commands (use: brew install bash-completion)
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+# Add tab completion for many more commands in MacPorts
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+    . /opt/local/etc/profile.d/bash_completion.sh
 fi
 
 # DISABLED - clear terminal title on ssh exit
