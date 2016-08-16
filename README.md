@@ -1,6 +1,9 @@
 Dotfiles
 ========
 
-My .Dotfiles for Mac OSX El Capitan, inspired by http://mths.be/dotfiles
+My .Dotfiles for Mac OSX El Capitan, forked from https://github.com/winterbe/dotfiles
 
-I'm currently using the [SMYCK](http://color.smyck.org/) terminal theme.
+Inspired by http://mths.be/dotfiles
+
+Contains a variation of the [SMYCK](http://color.smyck.org/) terminal theme, currently Terminal.app only.
+
