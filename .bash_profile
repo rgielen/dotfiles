@@ -20,3 +20,7 @@ fi
 
 # DISABLED - clear terminal title on ssh exit
 # PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "~/.gvm/bin/gvm-init.sh" ]] && source "~/.gvm/bin/gvm-init.sh"
+
