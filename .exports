@@ -10,8 +10,13 @@ export LANG="en_US"
 export MAVEN_OPTS="-Xms512M -Xmx2048M"
 export JAVA_HOME=`/usr/libexec/java_home`
 
-# Make ´nano the default editor
-export EDITOR="vim"
+# Make ´vim the default editor
+if [ -f /opt/local/bin/subl ]
+then
+    export EDITOR='subl -w'
+else
+    export EDITOR="vim"
+fi
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
