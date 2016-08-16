@@ -18,5 +18,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
-# clear terminal title on ssh exit
-PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
+# DISABLED - clear terminal title on ssh exit
+# PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
