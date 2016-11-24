@@ -1,5 +1,8 @@
 # MacPorts Path addition
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.fabric8/bin
+export GOPATH=~/DevHome/go
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
