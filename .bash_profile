@@ -18,6 +18,14 @@ if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
     . /opt/local/etc/profile.d/bash_completion.sh
 fi
 
+# Add tab completion for many more commands in Homebrew
+#if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#    . $(brew --prefix)/etc/bash_completion
+#fi
+if [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
+fi
+
 # DISABLED - clear terminal title on ssh exit
 # PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
 
