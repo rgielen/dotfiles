@@ -22,6 +22,10 @@ function Stop()
 	sudo -u ${PG_USER} ${PG_CTL} -D ${PG_DATA_DIR} stop -s -m fast
 }
 
+function Status() {
+	sudo -u ${PG_USER} ${PG_CTL} -D ${PG_DATA_DIR} status
+}
+
 function Restart()
 {
 	Stop
@@ -44,9 +48,10 @@ Switch()
 case $1 in
   start  ) Start   ;;
   stop   ) Stop    ;;
+  status ) Status  ;;
   restart) Restart ;;
   run    ) Run ;;
-  *      ) echo "Usage: $0 (start|stop|restart|run)";;
+  *      ) echo "Usage: $0 (start|stop|restart|run|status)";;
 esac
 }
 
