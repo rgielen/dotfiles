@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+		<key>Disabled</key>
+		<false/>
+		<key>Label</key>
+		<string>net.nrgie.tomcatproductive</string>
+<!--
+        <key>OnDemand</key>
+        <false/>
+-->
+        <key>RunAtLoad</key>
+        <true/>
+<!--
+        <key>EnvironmentVariables</key>
+        <dict>
+            <key>CATALINA_HOME</key>
+            <string>/Users/username/tomcat</string>
+            <key>JAVA_HOME</key>
+            <string>/Library/Java/Home</string>
+        </dict>
+-->
+		<key>ProgramArguments</key>
+		<array>
+			<string>/opt/java/scripts/tomcat-productive.sh</string>
+		</array>
+        <key>ServiceDescription</key>
+        <string>Tomcat Productive</string>
+        <key>StandardErrorPath</key>
+        <string>/opt/java/tomcat-productive/logs/launchd.stderr</string>
+        <key>StandardOutPath</key>
+        <string>/opt/java/tomcat-productive/logs/launchd.stdout</string>
+<!--
+        <key>UserName</key>
+        <string>root</string>
+-->
+    </dict>
+</plist>

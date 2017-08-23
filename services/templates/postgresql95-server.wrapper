@@ -1,0 +1,54 @@
+#!/bin/sh
+#
+# MacPorts generated daemondo support script
+#
+
+#
+# Init
+#
+prefix=/opt/local
+PGCTL=/opt/local/lib/postgresql95/bin/pg_ctl
+
+#
+# Start
+#
+Start()
+{
+	su postgres -c "${PGCTL} -D ${POSTGRESQL95DATA:=/opt/local/var/db/postgresql95/defaultdb} start -l /opt/local/var/log/postgresql95/postgres.log"
+}
+
+#
+# Stop
+#
+Stop()
+{
+	su postgres -c "${PGCTL} -D ${POSTGRESQL95DATA:=/opt/local/var/db/postgresql95/defaultdb} stop -s -m fast"
+}
+
+#
+# Restart
+#
+Restart()
+{
+	Stop
+	Start
+}
+
+#
+# Run
+#
+Run()
+{
+case $1 in
+  start  ) Start   ;;
+  stop   ) Stop    ;;
+  restart) Restart ;;
+  *      ) echo "$0: unknown argument: $1";;
+esac
+}
+
+#
+# Run a phase based on the selector
+#
+Run $1
+
