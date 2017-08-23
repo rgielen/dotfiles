@@ -13,3 +13,14 @@ sudo chown root:wheel net.rgielen.brew.postgres.plist
 sudo ln -sfv ${PWD}/net.rgielen.brew.postgres.plist /Library/LaunchDaemons/
 sudo launchctl load /Library/LaunchDaemons/net.rgielen.brew.postgres.plist
 ```
+
+## Nexus
+Rember to review ```$NEXUS_HOME/bin/nexus.vmoptions``` and ```$NEXUS_WORK/etc/nexus.properties```. 
+
+Sample installation as daemon:
+```
+cd ~/dotfiles/services/plists
+sudo chown root:wheel net.rgielen.nexus.plist
+sudo ln -sfv ${PWD}/net.rgielen.nexus.plist /Library/LaunchDaemons/
+sudo launchctl load /Library/LaunchDaemons/net.rgielen.nexus.plist
+```

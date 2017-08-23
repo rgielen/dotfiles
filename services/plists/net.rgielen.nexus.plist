@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+		<key>Disabled</key>
+		<false/>
+		<key>Label</key>
+		<string>net.rgielen.nexus</string>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>EnvironmentVariables</key>
+        <dict>
+            <key>JAVA_VERSION</key>
+            <string>1.8</string>
+        </dict>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/rene/dotfiles/services/scripts/nexus.sh</string>
+        </array>
+        <key>UserName</key>
+        <string>rene</string>
+        <key>ServiceDescription</key>
+        <string>Nexus Repository Service</string>
+    </dict>
+</plist>
