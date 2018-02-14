@@ -19,6 +19,10 @@ if [ -d $HOME/Library/PackageManager/bin ]; then
     export PATH=$PATH:$HOME/Library/PackageManager/bin
 fi
 
+# if [ -d /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/ ]; then
+#     export PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/
+# fi
+
 export GOPATH=~/DevHome/go
 export PATH=$PATH:$HOME/bin
 
