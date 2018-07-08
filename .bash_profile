@@ -26,6 +26,16 @@ if [ -f /usr/local/etc/bash_completion ]; then
     . /usr/local/etc/bash_completion
 fi
 
+# From installing brew bash-completion@2:
+if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+    . /usr/local/share/bash-completion/bash_completion
+fi
+
+# Add kubectl completion, not needed when usding brew completion
+#if [ -x "$(command -v kubectl)" ]; then
+#    source <(kubectl completion bash)
+#fi
+
 # DISABLED - clear terminal title on ssh exit
 # PS1='\[\e]1;\s\$ \W\a\e]2;\u@\h\a\]'"$PS1"
 
