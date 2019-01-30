@@ -1,6 +1,7 @@
 # Custom settings
-POWERLINE_LEFT_PROMPT="scm python_venv ruby cwd"
-POWERLINE_RIGHT_PROMPT="in_vim clock battery user_info"
+POWERLINE_LEFT_PROMPT="scm cwd"
+POWERLINE_RIGHT_PROMPT="k8s_context in_vim hostname user_info"
+POWERLINE_PROMPT_USER_INFO_MODE="sudo"
 
 # Path to the bash it configuration
 export BASH_IT="/Users/rene/.bash_it"
