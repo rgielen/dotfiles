@@ -1,3 +1,6 @@
+# Custom settings
+POWERLINE_LEFT_PROMPT="scm python_venv ruby cwd"
+POWERLINE_RIGHT_PROMPT="in_vim clock battery user_info"
 
 # Path to the bash it configuration
 export BASH_IT="/Users/rene/.bash_it"
