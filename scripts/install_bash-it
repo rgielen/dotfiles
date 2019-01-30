@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+OLDDIR=$(pwd)
+
+echo "Installing Powerline Fonts - see https://github.com/powerline/fonts for uninstall"
+cd $TMPDIR
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+echo
+
+echo "Installing Bash-it - see https://github.com/Bash-it/bash-it"
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+echo "Now run ~/.bash_it/install.sh to complete installation"
+
+cd $OLDDIR
