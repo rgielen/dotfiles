@@ -1,31 +1,3 @@
-# MacPorts Path addition
-if [ -d /opt/local/sbin ]; then
-    export PATH="/opt/local/sbin:$PATH"
-fi
-if [ -d /opt/local/bin ]; then
-    export PATH="/opt/local/bin:$PATH"
-fi
-
-if [ -d $HOME/.fabric8/bin ]; then
-    export PATH=$PATH:$HOME/.fabric8/bin
-fi
-if [ -d /usr/local/opt/groovy/libexec ]; then
-    export GROOVY_HOME=/usr/local/opt/groovy/libexec
-fi
-if [ -d "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ]; then
-    export PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-fi
-if [ -d $HOME/Library/PackageManager/bin ]; then
-    export PATH=$PATH:$HOME/Library/PackageManager/bin
-fi
-
-# if [ -d /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/ ]; then
-#     export PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/
-# fi
-
-export GOPATH=~/DevHome/go
-export PATH=$PATH:$HOME/bin:${GOPATH//://bin:}/bin
-
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE=en_US.UTF-8
