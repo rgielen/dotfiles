@@ -1,4 +1,5 @@
 # Custom settings
+#export BASH_IT_CUSTOM="~/dotfiles/rc.d"
 POWERLINE_LEFT_PROMPT="scm cwd"
 POWERLINE_RIGHT_PROMPT="k8s_context in_vim hostname user_info"
 POWERLINE_PROMPT_USER_INFO_MODE="sudo"
