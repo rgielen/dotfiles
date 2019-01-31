@@ -22,3 +22,7 @@ alias speedtest='curl -o /dev/null http://speedtest.wdc01.softlayer.com/download
 alias icloud="brctl log --wait --shorten"
 
 alias dcomp='docker-compose'
+
+if [ -f /usr/local/bin/thefuck ]; then
+    eval $(thefuck --alias oops)
+fi
