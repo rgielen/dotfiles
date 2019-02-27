@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PG_VERSION=${POSTGRES_VERSION:=10}
+export PG_VERSION=${POSTGRES_VERSION:=11}
 export PG_USER=${POSTGRES_USER:=$USER}
 export PG_DATA_DIR=${POSTGRES_DATA_DIR:=/usr/local/var/postgres}
 export PG_LOG=${POSTGRES_LOG:=/usr/local/var/log/postgres.log}
