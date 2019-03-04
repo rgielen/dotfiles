@@ -6,7 +6,7 @@ export PG_DATA_DIR=${POSTGRES_DATA_DIR:=/usr/local/var/postgres}
 export PG_LOG=${POSTGRES_LOG:=/usr/local/var/log/postgres.log}
 
 export PREFIX=/usr/local
-export BIN_DIR=${PREFIX}/opt/postgresql@${PG_VERSION}/bin
+export BIN_DIR=${PREFIX}/opt/postgresql/bin
 export POSTGRES=${BIN_DIR}/postgres
 export PG_CTL=${BIN_DIR}/pg_ctl
 export PID_FILE=${PG_DATA_DIR}/postmaster.pid
