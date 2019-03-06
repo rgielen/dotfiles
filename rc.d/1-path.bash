@@ -1,3 +1,8 @@
+# Homebrew sbin
+if [ -d /usr/local/sbin ]; then
+    export PATH=/usr/local/sbin:$PATH
+fi
+
 # Fabric8
 if [ -d $HOME/.fabric8/bin ]; then
     export PATH=$PATH:$HOME/.fabric8/bin
