@@ -9,6 +9,11 @@ if [ $(uname) = "Darwin" ] && command -v brew &>/dev/null ; then
   if [ "${BASH_VERSINFO}" -ge 4 ] && [ -f "$BREW_PREFIX"/share/bash-completion/bash_completion ]; then
     . "$BREW_PREFIX"/share/bash-completion/bash_completion
   fi
+
+  # GCloud SDK @ Homebrew - brew cask install google-cloud-sdk
+  if [ -f "$BREW_PREFIX"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc ]; then
+    . "$BREW_PREFIX"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
+  fi
 fi
 
 # Add kubectl completion, not needed when usding brew completion
