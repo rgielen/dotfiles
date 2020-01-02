@@ -3,10 +3,20 @@
 export PG_VERSION=${POSTGRES_VERSION:=11}
 export PG_USER=${POSTGRES_USER:=$USER}
 export PG_DATA_DIR=${POSTGRES_DATA_DIR:=/usr/local/var/postgres}
+if [ -d "/usr/local/var/postgresql@${POSTGRES_VERSION}" ]; then
+    export PG_DATA_DIR="/usr/local/var/postgresql@${POSTGRES_VERSION}"
+fi
+
 export PG_LOG=${POSTGRES_LOG:=/usr/local/var/log/postgres.log}
 
 export PREFIX=/usr/local
-export BIN_DIR=${PREFIX}/opt/postgresql/bin
+
+export PG_HOME=${PREFIX}
+if [ -d "${PREFIX}/opt/postgresql@${POSTGRES_VERSION}" ]; then
+    export PG_HOME="${PREFIX}/opt/postgresql@${POSTGRES_VERSION}"
+fi
+
+export BIN_DIR=${PG_HOME}/bin
 export POSTGRES=${BIN_DIR}/postgres
 export PG_CTL=${BIN_DIR}/pg_ctl
 export PID_FILE=${PG_DATA_DIR}/postmaster.pid
