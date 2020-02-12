@@ -1,18 +1,17 @@
-if [ $(uname) = "Darwin" ] && command -v brew &>/dev/null ; then
-  BREW_PREFIX=$(brew --prefix)
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX=$(brew --prefix)
 
-  if [ -f "$BREW_PREFIX"/etc/bash_completion ]; then
-    . "$BREW_PREFIX"/etc/bash_completion
+  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+      source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  else
+  	for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+    	[[ -r "$COMPLETION" ]] && source "$COMPLETION"
+    done
   fi
-
- # homebrew/versions/bash-completion2 (required for projects.completion.bash) is installed to this path
-  if [ "${BASH_VERSINFO}" -ge 4 ] && [ -f "$BREW_PREFIX"/share/bash-completion/bash_completion ]; then
-    . "$BREW_PREFIX"/share/bash-completion/bash_completion
-  fi
-
+	
   # GCloud SDK @ Homebrew - brew cask install google-cloud-sdk
-  if [ -f "$BREW_PREFIX"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc ]; then
-    . "$BREW_PREFIX"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
+  if [ -f "$HOMEBREW_PREFIX"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc ]; then
+    . "$HOMEBREW_PREFIX"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
   fi
 fi
 
