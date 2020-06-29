@@ -34,3 +34,7 @@ alias jdk14="export JAVA_HOME=$(/usr/libexec/java_home -v 14)"
 alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
 alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
 alias mvn14="JAVA_HOME=$(/usr/libexec/java_home -v 14) mvn"
+
+# K8s
+alias kc=kubectl
+complete -F __start_kubectl kc
