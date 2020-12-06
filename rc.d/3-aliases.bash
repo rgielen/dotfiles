@@ -30,10 +30,10 @@ fi
 # JDK
 alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
 alias jdk11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
-alias jdk14="export JAVA_HOME=$(/usr/libexec/java_home -v 14)"
+alias jdk15="export JAVA_HOME=$(/usr/libexec/java_home -v 15)"
 alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
 alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
-alias mvn14="JAVA_HOME=$(/usr/libexec/java_home -v 14) mvn"
+alias mvn15="JAVA_HOME=$(/usr/libexec/java_home -v 14) mvn"
 
 # K8s
 alias kc=kubectl
