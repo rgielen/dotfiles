@@ -38,3 +38,10 @@ alias mvn15="JAVA_HOME=$(/usr/libexec/java_home -v 15) mvn"
 # K8s
 alias kc=kubectl
 complete -F __start_kubectl kc
+alias kx=kubectx
+complete -F _kube_contexts kx
+alias kn=kubens
+complete -F _kube_namespaces kn
+
+# Virsh
+alias nucsh="virsh -c qemu+ssh://nuc01.rgielen.de/system?socket=/var/run/libvirt/libvirt-sock"
