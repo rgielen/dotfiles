@@ -116,10 +116,10 @@ style = "bold yellow bg:21"
 style_user = "red bg:bright-yellow"
 style_root = "black bold bg:red"
 format = "[$user@]($style)"
-show_always = true
+show_always = false
 
 [hostname]
-ssh_only = false
+ssh_only = true
 format =  "[$hostname]($style)"
 style = "black bold bg:bright-yellow"
 trim_at = "."
