@@ -35,3 +35,6 @@ export GREP_OPTIONS='--color=auto'
 # Colorful LS
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
+
+# Starship
+export STARSHIP_CONFIG=~/dotfiles/starship/starship.toml
