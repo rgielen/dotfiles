@@ -28,12 +28,15 @@ if [ -f $HOMEBREW_PREFIX/bin/thefuck ]; then
 fi
 
 # JDK
-alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
-alias jdk11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
-alias jdk16="export JAVA_HOME=$(/usr/libexec/java_home -v 16)"
-alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
-alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
-alias mvn16="JAVA_HOME=$(/usr/libexec/java_home -v 16) mvn"
+if [ -x /usr/libexec/java_home ]
+then
+    alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
+    alias jdk11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
+    alias jdk16="export JAVA_HOME=$(/usr/libexec/java_home -v 16)"
+    alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
+    alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
+    alias mvn16="JAVA_HOME=$(/usr/libexec/java_home -v 16) mvn"
+fi
 
 # K8s
 alias kc=kubectl

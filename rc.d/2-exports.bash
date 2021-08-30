@@ -5,7 +5,12 @@ export LANG="en_US"
 
 # Java Environment
 export MAVEN_OPTS="-Xms512M -Xmx2048M"
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
+if [ -x /usr/libexec/java_home ]
+then
+    export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+else
+    export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
+fi
 
 # Make ´vim the default editor
 if [ -f /opt/local/bin/subl ]
