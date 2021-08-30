@@ -6,3 +6,5 @@ for file in ~/dotfiles/rc.d/*.bash; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
+
+[ -x "$(brew --prefix)/bin/starship" ] && eval "$(starship init bash)"
