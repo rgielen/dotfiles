@@ -12,6 +12,8 @@ else
     export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
 fi
 
+
+
 # Make ´vim the default editor
 if [ -f /opt/local/bin/subl ]
 then

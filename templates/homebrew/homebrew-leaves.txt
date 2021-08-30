@@ -5,6 +5,7 @@ bash-completion@2
 bat
 buildpacks/tap/pack
 cdrtools
+coreutils
 curl
 dive
 doctl
