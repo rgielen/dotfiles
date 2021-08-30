@@ -23,7 +23,7 @@ alias icloud="brctl log --wait --shorten"
 
 alias dcomp='docker-compose'
 
-if [ -f /usr/local/bin/thefuck ]; then
+if [ -f $HOMEBREW_PREFIX/bin/thefuck ]; then
     eval $(thefuck --alias oops)
 fi
 
@@ -50,4 +50,4 @@ if ps -p $$ | grep -q bash; then
     complete -F _kube_namespaces kn
 fi
 
-[ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && source $(brew --prefix)/etc/profile.d/autojump.sh
+[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && source $(brew --prefix)/etc/profile.d/autojump.sh

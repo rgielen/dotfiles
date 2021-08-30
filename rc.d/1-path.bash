@@ -1,19 +1,14 @@
 [ -x "/opt/homebrew/bin/brew" ] && eval $(/opt/homebrew/bin/brew shellenv)
 [ -x "/usr/local/bin/brew" ] && eval $(/usr/local/bin/brew shellenv)
 
-# Homebrew sbin
-if [ -d /usr/local/sbin ]; then
-    export PATH=/usr/local/sbin:$PATH
-fi
-
 # Fabric8
 if [ -d $HOME/.fabric8/bin ]; then
     export PATH=$PATH:$HOME/.fabric8/bin
 fi
 
 # Groovy
-if [ -d /usr/local/opt/groovy/libexec ]; then
-    export GROOVY_HOME=/usr/local/opt/groovy/libexec
+if [ -d $HOMEBREW_PREFIX/opt/groovy/libexec ]; then
+    export GROOVY_HOME=$HOMEBREW_PREFIX/opt/groovy/libexec
 fi
 
 # Visual Studio Code
@@ -26,10 +21,13 @@ if [ -d $HOME/Library/PackageManager/bin ]; then
     export PATH=$PATH:$HOME/Library/PackageManager/bin
 fi
 
+# Add $HOME/bin to path
+[ -d $HOME/bin ] && export PATH=$PATH:$HOME/bin
+
 # Go
 export GOPATH=~/DevHome/go
-[ ! -d "$GOPATH" ] && mkdir "$GOPATH"
-export PATH=$PATH:$HOME/bin:${GOPATH//://bin:}/bin
+[ ! -d "$GOPATH" ] && mkdir -p "$GOPATH"
+export PATH=$PATH:${GOPATH//://bin:}/bin
 
 # Google Cloud SDK
 # The next line updates PATH for the Google Cloud SDK.
