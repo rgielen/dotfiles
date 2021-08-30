@@ -12,7 +12,11 @@ else
     export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
 fi
 
-
+if command -v mvnd &> /dev/null && command -v greadlink &> /dev/null
+then
+    export MVND_HOME=$(dirname $(dirname $(greadlink -f $(which mvnd))))
+    source $MVND_HOME/libexec/bin/mvnd-bash-completion.bash
+fi
 
 # Make ´vim the default editor
 if [ -f /opt/local/bin/subl ]
