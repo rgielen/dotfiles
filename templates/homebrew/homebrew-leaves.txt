@@ -12,10 +12,12 @@ exa
 fswatch
 fzf
 git
+git-lfs
 gitui
 gnu-getopt
 gnupg
 go
+gradle
 groovy
 hcloud
 helm
@@ -27,6 +29,7 @@ jhipster
 jq
 k9s
 kind
+kompose
 krew
 kubectx
 kubernetes-cli
@@ -42,8 +45,10 @@ nmap
 node
 oci-cli
 octant
+p7zip
 pandoc
 plantuml
+pinentry-mac
 postgresql@11
 pwgen
 qemu
@@ -65,6 +70,7 @@ tree
 vim
 ubuntu/microk8s/microk8s
 watch
+weaveworks/tap/footloose
 wget
 wireguard-tools
 yarn
