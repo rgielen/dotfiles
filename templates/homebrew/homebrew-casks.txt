@@ -1,0 +1,8 @@
+# List primary installed packages:
+# brew leaves
+# Parent packages:
+# brew uses --installed graphviz
+brew tap AdoptOpenJDK/openjdk
+brew install --cask adoptopenjdk11
+brew install --cask adoptopenjdk16
+brew install --cask google-cloud-sdk
