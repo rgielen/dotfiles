@@ -128,7 +128,7 @@ show_always = false
 ssh_only = true
 format =  "[$hostname]($style)"
 style = "black bold bg:bright-yellow"
-trim_at = "."
+trim_at = ".fritz.box"
 
 [cmd_duration]
 format = "[ ◷ $duration ]($style)"
