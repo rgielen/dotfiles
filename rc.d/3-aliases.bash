@@ -49,3 +49,5 @@ if ps -p $$ | grep -q bash; then
     complete -F _kube_contexts kx
     complete -F _kube_namespaces kn
 fi
+
+[ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && source $(brew --prefix)/etc/profile.d/autojump.sh

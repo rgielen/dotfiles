@@ -107,7 +107,7 @@ style = "bold white bg:21"
 format = "[ ${symbol}(${version} )]($style)"
 symbol = "☕"
 style = "bold 1 bg:bright-white"
-version_format = "${major}"
+version_format = "${major}.${minor}"
 
 [package]
 format = "[$symbol$version ]($style)"
@@ -140,3 +140,9 @@ format = "[ $symbol $status ]($style)"
 disabled = false
 style = "bold white bg:red"
 map_symbol = true
+
+[shell]
+disabled = false
+bash_indicator = ""
+zsh_indicator = "⚡"
+format = "$indicator"
