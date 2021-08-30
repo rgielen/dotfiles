@@ -94,12 +94,12 @@ style = "bold white bg:red"
 
 [kubernetes]
 disabled = false
-format = '[ $symbol](bold bg:21)[$context]($style)[( $namespace)]($style dimmed)'
+format = '[ $symbol](bold bg:21)[$context]($style)[( $namespace) ]($style dimmed)'
 symbol = "⎈ "
 style = "bold white bg:21"
 
 [java]
-format = "[${symbol}(${version} )]($style)"
+format = "[ ${symbol}(${version} )]($style)"
 symbol = "☕"
 style = "bold 1 bg:bright-white"
 version_format = "${major}"
@@ -124,3 +124,8 @@ ssh_only = true
 format =  "[$hostname]($style)"
 style = "black bold bg:bright-yellow"
 trim_at = "."
+
+[cmd_duration]
+format = "[ ◷ $duration ]($style)"
+style = "red bg:229"
+show_milliseconds = true
