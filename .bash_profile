@@ -7,4 +7,5 @@ for file in ~/dotfiles/rc.d/*.bash; do
 done
 unset file
 
-[ -x "$(brew --prefix)/bin/starship" ] && eval "$(starship init bash)"
+# [ -x "$(brew --prefix)/bin/starship" ] && eval "$(starship init bash)"
+command -v starship &> /dev/null && eval "$(starship init bash)"
