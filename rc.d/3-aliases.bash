@@ -38,6 +38,13 @@ then
     alias mvn16="JAVA_HOME=$(/usr/libexec/java_home -v 16) mvn"
 fi
 
+# bat integration
+if command -v bat &> /dev/null
+then
+    alias fzf="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+fi
+
 # K8s
 alias kc=kubectl
 alias kx=kubectx
