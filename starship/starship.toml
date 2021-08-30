@@ -134,3 +134,9 @@ trim_at = "."
 format = "[ ◷ $duration ]($style)"
 style = "red bg:229"
 show_milliseconds = true
+
+[status]
+format = "[ $symbol $status ]($style)"
+disabled = false
+style = "bold white bg:red"
+map_symbol = true
