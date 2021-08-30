@@ -9,3 +9,6 @@ shopt -s cdspell
 
 # Eanble completion for aliases
 shopt -s progcomp_alias
+
+# Enable autocd
+shopt -s autocd
