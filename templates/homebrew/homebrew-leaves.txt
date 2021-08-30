@@ -10,6 +10,7 @@ curl
 dive
 doctl
 exa
+fpp
 fswatch
 fzf
 git
