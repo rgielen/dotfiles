@@ -94,7 +94,8 @@ style = "bold white bg:red"
 
 [kubernetes]
 disabled = false
-format = '[$symbol$context]($style)[( $namespace)]($style dimmed)'
+format = '[ $symbol](bold bg:21)[$context]($style)[( $namespace)]($style dimmed)'
+symbol = "⎈ "
 style = "bold white bg:21"
 
 [java]
