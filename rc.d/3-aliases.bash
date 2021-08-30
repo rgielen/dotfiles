@@ -37,11 +37,15 @@ alias mvn16="JAVA_HOME=$(/usr/libexec/java_home -v 16) mvn"
 
 # K8s
 alias kc=kubectl
-complete -F __start_kubectl kc
 alias kx=kubectx
-complete -F _kube_contexts kx
 alias kn=kubens
-complete -F _kube_namespaces kn
 
 # Virsh
 alias nucsh="virsh -c qemu+ssh://nuc01.rgielen.de/system?socket=/var/run/libvirt/libvirt-sock"
+
+# Enable alias autocompletion in case of bash
+if ps -p $$ | grep -q bash; then
+    complete -F __start_kubectl kc
+    complete -F _kube_contexts kx
+    complete -F _kube_namespaces kn
+fi
