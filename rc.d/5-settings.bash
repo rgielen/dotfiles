@@ -6,3 +6,6 @@ shopt -s histappend
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
+
+# Eanble completion for aliases
+shopt -s progcomp_alias
