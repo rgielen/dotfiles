@@ -3,9 +3,11 @@ autojump
 bash
 bash-completion@2
 bat
+buildpacks/tap/pack
 cdrtools
 curl
 dive
+doctl
 exa
 fswatch
 fzf
@@ -32,8 +34,10 @@ kustomize
 lazygit
 maven
 maven-completion
+micronaut
 midnight-commander
 mvndaemon/mvnd/mvnd
+ncdu
 nmap
 node
 oci-cli
@@ -43,6 +47,8 @@ plantuml
 postgresql@11
 pwgen
 qemu
+rancher-cli
+reg
 restic
 rsync
 ruby
@@ -53,10 +59,14 @@ subversion
 terraform
 thefuck
 tig
+tldr
 tmux
 tree
 vim
+ubuntu/microk8s/microk8s
 watch
 wget
+wireguard-tools
+yarn
 yq
 zsh-completions
