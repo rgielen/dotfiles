@@ -97,6 +97,11 @@ disabled = false
 format = '[ $symbol](bold bg:21)[$context]($style)[( $namespace) ]($style dimmed)'
 symbol = "⎈ "
 style = "bold white bg:21"
+[kubernetes.context_aliases]
+"nuk.rgielen.com" = "nuk"
+"docker-desktop" = "🐳"
+"microk8s" = "µk8s"
+"gke_.*-(?P<cluster>[\\w-]+)" = "gke-$cluster"
 
 [java]
 format = "[ ${symbol}(${version} )]($style)"
