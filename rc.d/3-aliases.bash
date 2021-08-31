@@ -45,6 +45,9 @@ then
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 
+# fzf
+alias fzq="fzf -q"
+
 # K8s
 alias kc=kubectl
 alias kx=kubectx

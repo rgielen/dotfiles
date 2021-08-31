@@ -14,4 +14,7 @@ shopt -s progcomp_alias
 shopt -s autocd
 
 # McFly https://github.com/cantino/mcfly
-command -v mcfly &> /dev/null && eval "$(mcfly init bash)"
+if command -v mcfly &> /dev/null; then 
+    export MCFLY_RESULTS_SORT=LAST_RUN
+    eval "$(mcfly init bash)"
+fi
