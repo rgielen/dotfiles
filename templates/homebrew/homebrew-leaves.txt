@@ -39,10 +39,12 @@ kustomize
 lazygit
 maven
 maven-completion
+micro
 micronaut
 midnight-commander
 mvndaemon/mvnd/mvnd
 ncdu
+neovim
 nmap
 node
 oci-cli
@@ -52,6 +54,7 @@ pandoc
 plantuml
 pinentry-mac
 postgresql@11
+pyenv
 pwgen
 qemu
 rancher-cli

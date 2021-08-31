@@ -39,3 +39,8 @@ if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then source "$HOME/googl
 if [ -d $HOME/.krew/bin ]; then
     export PATH=$PATH:$HOME/.krew/bin
 fi
+
+# Pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
