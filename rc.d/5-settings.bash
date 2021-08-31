@@ -12,3 +12,6 @@ shopt -s progcomp_alias
 
 # Enable autocd
 shopt -s autocd
+
+# McFly https://github.com/cantino/mcfly
+command -v mcfly &> /dev/null && eval "$(mcfly init bash)"

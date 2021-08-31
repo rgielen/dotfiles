@@ -6,6 +6,7 @@ bat
 buildpacks/tap/pack
 cdrtools
 coreutils
+ctags
 curl
 dive
 doctl
@@ -60,6 +61,7 @@ qemu
 rancher-cli
 reg
 restic
+ripgrep
 rsync
 ruby
 skaffold

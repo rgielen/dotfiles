@@ -6,3 +6,7 @@ brew tap AdoptOpenJDK/openjdk
 brew install --cask adoptopenjdk11
 brew install --cask adoptopenjdk16
 brew install --cask google-cloud-sdk
+
+# https://github.com/cantino/mcfly
+brew tap cantino/mcfly
+brew install mcfly
