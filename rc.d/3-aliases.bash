@@ -11,6 +11,9 @@ alias l="ls -l"
 alias la="ls -lahT"
 alias ls="command ls -G"
 
+# TODO: Investigate https://unix.stackexchange.com/questions/4290/aliasing-cd-to-pushd-is-it-a-good-idea
+alias dirs="dirs -v"
+
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
@@ -63,4 +66,10 @@ if ps -p $$ | grep -q bash; then
     complete -F _kube_namespaces kn
 fi
 
-[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && source $(brew --prefix)/etc/profile.d/autojump.sh
+[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && source $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
+
+if command -v rg &> /dev/null && command -v fpp &> /dev/null ; then
+    function rgf() { rg "$@" | fpp; }
+else
+    function rgf() { echo "Please install ripgrep and fpp to make this work"; }
+fi
