@@ -36,9 +36,11 @@ then
     alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
     alias jdk11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
     alias jdk16="export JAVA_HOME=$(/usr/libexec/java_home -v 16)"
+    alias jdk17="export JAVA_HOME=$(/usr/libexec/java_home -v 17)"
     alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
     alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
     alias mvn16="JAVA_HOME=$(/usr/libexec/java_home -v 16) mvn"
+    alias mvn17="JAVA_HOME=$(/usr/libexec/java_home -v 17) mvn"
 fi
 
 # bat integration

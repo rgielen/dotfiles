@@ -2,9 +2,11 @@
 # brew leaves
 # Parent packages:
 # brew uses --installed graphviz
-brew tap AdoptOpenJDK/openjdk
-brew install --cask adoptopenjdk11
-brew install --cask adoptopenjdk16
+# brew tap AdoptOpenJDK/openjdk
+brew untap AdoptOpenJDK/openjdk
+brew tap homebrew/cask-versions
+brew install --cask temurin11
+brew install --cask temurin
 brew install --cask google-cloud-sdk
 
 # https://github.com/cantino/mcfly
