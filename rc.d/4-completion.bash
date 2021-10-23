@@ -20,3 +20,7 @@ fi
 #if [ -x "$(command -v kubectl)" ]; then
 #    source <(kubectl completion bash)
 #fi
+
+if [ -f "$BREW_PREFIX"/bin/limactl ]; then
+  source <("$BREW_PREFIX"/bin/limactl completion bash)
+fi
