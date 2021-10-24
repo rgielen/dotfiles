@@ -5,6 +5,7 @@ bash-completion@2
 bat
 buildpacks/tap/pack
 cdrtools
+colima
 coreutils
 ctags
 curl
@@ -38,6 +39,7 @@ kubectx
 kubernetes-cli
 kustomize
 lazygit
+lima
 maven
 maven-completion
 micro
@@ -46,6 +48,7 @@ midnight-commander
 mvndaemon/mvnd/mvnd
 ncdu
 neovim
+nerdctl
 nmap
 node
 oci-cli
