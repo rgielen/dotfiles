@@ -1,0 +1,20 @@
+service:
+#  name: registry
+  type: NodePort
+  nodePort: 32000
+
+resources: 
+  limits:
+   cpu: 1000m
+   memory: 256Mi
+  requests:
+   cpu: 100m
+   memory: 128Mi
+
+persistence:
+  enabled: true
+  size: 50Gi
+
+#configData:
+#  http:
+#    addr: :32000
