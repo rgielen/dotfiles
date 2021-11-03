@@ -1,3 +1,6 @@
+# helm template --values values.yaml twuni/docker-registry
+# helm install --values values.yaml --namespace docker-registry --create-namespace docker-registry twuni/docker-registry
+
 service:
 #  name: registry
   type: NodePort
