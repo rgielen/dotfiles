@@ -37,6 +37,11 @@ kompose
 krew
 kubectx
 kubernetes-cli
+kubescape 
+kubeseal
+kubespy
+kubeswitch
+danielfoehrkn/switch/switch
 kustomize
 lazygit
 lima
