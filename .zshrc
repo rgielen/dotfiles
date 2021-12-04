@@ -14,4 +14,4 @@ fi
 [ -r "${HOME}/dotfiles/rc.d/3-aliases.bash" ] && source "${HOME}/dotfiles/rc.d/3-aliases.bash"
 [ -r "${HOME}/dotfiles/rc.d/9-final.bash" ] && source "${HOME}/dotfiles/rc.d/9-final.bash"
 
-[ -x "$(brew --prefix)/bin/starship" ] && eval "$(starship init zsh)"
+# [ -x "$(brew --prefix)/bin/starship" ] && eval "$(starship init zsh)"
