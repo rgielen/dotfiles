@@ -18,3 +18,6 @@ Activation:
 
 [Bash-it](https://github.com/Bash-it/bash-it) is a community bash famework, including Powerline prompts and other themes, along with a lot of tooling
 
+### zsh Setup
+
+ - [Compact Gist from vfarcic](https://gist.github.com/vfarcic/7b9ce0f066a209b66fd2efe9d1f5ba06)
