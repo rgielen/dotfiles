@@ -1,3 +1,5 @@
+argo
+argocd
 asciidoctor
 autojump
 bash
