@@ -147,6 +147,16 @@ module.exports = {
     keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
+		"pane:next": [
+		    "command+]",
+		    "command+shift+down",
+		    "command+alt+down"
+		  ],
+  		"pane:prev": [
+  		    "command+[",
+  		    "command+shift+up",
+  		    "command+alt+up"
+  		  ],
     },
 };
 //# sourceMappingURL=config-default.js.map
