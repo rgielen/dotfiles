@@ -2,7 +2,8 @@
 
 DOTFILES_BIN=$(dirname $0)
 
-sudo apt install xdg-utils zsh build-essentials
+sudo apt install -y zsh build-essential
+#sudo apt install -y xdg-utils
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
