@@ -7,4 +7,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/cust
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-cp $DOTFILES_BIN/../templates/* $HOME
+cp $DOTFILES_BIN/../templates/.* $HOME
