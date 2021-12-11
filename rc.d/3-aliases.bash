@@ -26,6 +26,9 @@ alias icloud="brctl log --wait --shorten"
 
 alias dcomp='docker-compose'
 
+# Highlight matches for GREP
+alias grep='grep --color=auto'
+
 if [ -f $HOMEBREW_PREFIX/bin/thefuck ]; then
     eval $(thefuck --alias oops)
 fi

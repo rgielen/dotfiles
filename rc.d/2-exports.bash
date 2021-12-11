@@ -42,9 +42,6 @@ export HISTFILESIZE=$HISTSIZE
 # DISABLED - Make some commands not show up in history
 # export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
-# Highlight matches for GREP
-export GREP_OPTIONS='--color=auto'
-
 # Colorful LS
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
