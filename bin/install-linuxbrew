@@ -1,0 +1,10 @@
+#! /bin/bash
+
+DOTFILES_BIN=$(dirname $0)
+
+sudo apt install xdg-utils zsh build-essentials
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+brew tap cantino/mcfly
+brew install starship mcfly
