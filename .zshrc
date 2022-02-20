@@ -2,6 +2,8 @@
 
 export SHELL=$(which zsh)
 
+export CURL_SSL_BACKEND="secure-transport"
+
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
