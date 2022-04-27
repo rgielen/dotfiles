@@ -1,0 +1,309 @@
+12270  microk8s install --mem 6144 --disk 50
+12271  microk8s install --mem 6144 --disk 50000
+12272  microk8s install --mem 6 --disk 50
+12273  microk8s config
+12274  microk8s config|bat
+12275  microk8s config > mk.yaml
+12276  bat mk.yaml
+12277  vim mk.yaml 
+12278  kc konfig
+12279  kc kofig import -s mk.yaml
+12280  kc konfig import -s mk.yaml
+12281  kx
+12282  kc get nodes
+12283  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+12284  helm repo add "stable" "https://charts.helm.sh/stable" --force-update
+12285  helm repo update
+12286  helm
+12287  helm show value prometheus-community/kube-prometheus-stack
+12288  helm show values prometheus-community/kube-prometheus-stack
+12289  helm show values prometheus-community/kube-prometheus-stack|grep scrape
+12290  helm search docker
+12291  helm search repo docker
+12292  helm list --all-namespaces 
+12293  kn monitoring 
+12294  helm list
+12295  helm uninstall prometheus 
+12296  kn default 
+12297  kc delete namespaces monitoring 
+12298  microk8s statu
+12299  multipass enable dns helm3 ingress metrics-server portainer rbac storage
+12300  microk8s enable dns helm3 ingress metrics-server portainer rbac storage
+12301  microk8s status
+12302  kc get storageclasses.storage.k8s.io 
+12303  kc get svc
+12304  kc get svc --all-namespaces 
+12305  kc port-forward services/portainer 9000
+12306  kc port-forward --help
+12307  kc get ingress
+12308  kc get ingress -A
+12309  kc get ingress --all-namespaces 
+12310  kc get ingressclasses.networking.k8s.io 
+12311  helm install prometheus prometheus-community/kube-prometheus-stack --namespace=monitoring --create-namespace --set server.global.scrape_interval=30s
+12312  kubectl --namespace monitoring get pods -l "release=prometheus"
+12313  vim test.pem
+12314  openssl -in test.pem -text
+12315  openssl x509 -in test.pem -text
+12316  ls
+12317  rm mk.yaml 
+12318  rm jenkins.war 
+12319  rm pgadmin.log 
+12320  rm test.pem 
+12321  cd
+12322  cd dotfiles/
+12323  git fetch
+12324  git pull
+12325  tmux
+12326  kx
+12327  cd
+12328  cd training/
+12329  ls
+12330  cd ..
+12331  rm -rf training/
+12332  mkdir prepare
+12333  cd prepare/
+12334  git clone ssh://git@gitlab.training.rgielen.net:30222/springboot2107/hello-spring.git
+12335  git clone ssh://git@gitlab.training.rgielen.net:30222/springboot2107/springboot-demo.git
+12336  ls
+12337  idea .
+12338  cd springboot-demo/
+12339  mvn clean package
+12340  cd ../hello-spring
+12341  mvn clean package 
+12342  git status 
+12343  ls
+12344  rm -rf \$\{project.build.directory\}/
+12345  mvn clean package 
+12346  cd -
+12347  ls
+12348  rm -rf \$\{project.build.directory\}/
+12349  mvn clean package 
+12350  git pull
+12351  git status
+12352  git pull
+12353  terraform plan
+12354  cd training-setups-terraform/
+12355  terraform plan
+12356  terraform apply
+12357  terraform apply
+12358  terraform apply
+12359  ./list.sh 
+12360  ./list.sh > git2109.txt
+12361  cd training-setups-terraform/
+12362  terraform apply
+12363  ./list.sh > maven2110.txt 
+12364  git pull
+12365  mkdir kubernetes2110
+12366  cp maven2110/maven2110-participants.csv kubernetes2110/kubernetes2110-participants.csv
+12367  git add kubernetes2110/
+12368  git commit -m "Add k8s 2110 participants"
+12369  git push
+12370  git add .
+12371  git commit -m "Provision maven2110"
+12372  git push
+12373  cd ../..
+12374  svn up
+12375  cd -
+12376  svn add *
+12377  svn commit -m "Re. 1513"
+12378  cd
+12379  cd training-setups-terraform/
+12380  terraform apply
+12381  terraform apply
+12382  ./list.sh > kubernetes2110.txt
+12383  pwd
+12384  ./list.sh 
+12385  ./list.sh > kubernetes2111.txt
+12386  cd
+12387  mkdir training
+12388  cd training/
+12389  ssh user@ws1.kubernetes2111.rgielen.de
+12390  ssh user@ws1.kubernetes2111.rgielen.de
+12391  ssh user@ws1.kubernetes2111.rgielen.de
+12392  ssh user@ws1.kubernetes2111.rgielen.de
+12393  ssh user@ws1.kubernetes2111.rgielen.de 
+12394  cd k8s-basics/core-elements/manifests/
+12395  kubectl apply -f pod-simple.yaml 
+12396  kubectl get pods
+12397  kubectl get pods --watch
+12398  cd training-setups-terraform/
+12399  terraform destroy
+12400  git fetch
+12401  git rebase origin/state/with-machines 
+12402  git push
+12403  git pull
+12404  mkdir kubernetes2111
+12405  cp kubernetes2110/kubernetes2110-participants.csv kubernetes2111/kubernetes2111-participants.csv
+12406  git add kubernetes2111/
+12407  git commit -m "Create k8s2111 course"
+12408  git push
+12409  git add kubernetes2111/
+12410  git commit -m "Provision k8s2111 course"
+12411  git push
+12412  ssh user@ws1.kubernetes2111.rgielen.de 
+12413  kubectl port-forward pod-example 9090:80
+12414  ssh user@ws1.kubernetes2111.rgielen.de 
+12415  ssh user@ws1.kubernetes2111.rgielen.de 
+12416  ssh user@ws1.kubernetes2111.rgielen.de 
+12417  ssh user@ws1.kubernetes2111.rgielen.de 
+12418  http :8080
+12419  ssh user@ws1.kubernetes2111.rgielen.de 
+12420  terraform destroy
+12421  cd training-setups-terraform/
+12422  terraform destroy
+12423  kubectl get pods --watch
+12424  k9s
+12425  k9s
+12426  k9s
+12427  k9s
+12428  k9s
+12429  k9s
+12430  k9s
+12431  brew install lima
+12432  which lima
+12433  rgf
+12434  brew install ripgrep
+12435  rgf
+12436  brew install ffp
+12437  brew install fpp
+12438  which lima
+12439  which limactl
+12440  ping 192.168.5.15
+12441  http :16433
+12442  lima htop
+12443  limy kubectl version
+12444  lima kubectl version
+12445  cd ..
+12446  lima microk8s config
+12447  lima sudo microk8s config
+12448  lima sudo microk8s config > lima.yaml
+12449  code lima.yaml 
+12450  kubectl --kubeconfig lima.yaml get nodes
+12451  kubectl --kubeconfig lima.yaml get nodes
+12452  k9s --help
+12453  k9s --kubeconfig lima.yaml
+12454  k9s --kubeconfig lima.yaml
+12455  ssh rene@renes-imac
+12456  brew link --overwrite --dry-run asciidoctor
+12457  ls -la /usr/local/bin/asciidoctor
+12458  brew link --overwrite asciidoctor
+12459  k9s
+12460  k9s
+12461  kc get all --all-namespaces 
+12462  kn docker-registry 
+12463  helm uninstall docker-registry 
+12464  cd dotfiles/config/helm/docker-registry/
+12465  ls
+12466  helm template --values values.yaml twuni/docker-registry
+12467  vim values.yaml 
+12468  helm template --values values.yaml twuni/docker-registry
+12469  helm install --values values.yaml twuni/docker-registry
+12470  helm install --values values.yaml docker-registry twuni/docker-registry
+12471  k9s
+12472  helm template --values values.yaml twuni/docker-registry
+12473  cat values.yaml 
+12474  brew install vim
+12475  vim values.yaml 
+12476  helm template --values values.yaml twuni/docker-registry
+12477  helm uninstall docker-registry 
+12478  helm install --values values.yaml docker-registry twuni/docker-registry
+12479  k9s
+12480  date
+12481  http :32000
+12482  docker push localhost:32000/registry
+12483  limactl shell colima 
+12484  k9s
+12485  htop
+12486  git add values.yaml 
+12487  git commit -m "Create parameters for nodeport based registry deployment"
+12488  git push
+12491  git pull
+12492  ls
+12493  helm repo add twuni https://helm.twun.io
+12494  helm repo update 
+12495  cd config/helm/docker-registry/
+12496  helm install --values values.yaml --namespace docker-registry --create-namespace twuni/docker-registry
+12497  helm install --values values.yaml --namespace docker-registry --create-namespace docker-registry twuni/docker-registry
+12498  docker pull registry.jetbrains.team/p/prj/containers/projector-idea-u
+12499  docker run --rm -p 8887:8887 -it registry.jetbrains.team/p/prj/containers/projector-idea-u
+12500  history
+12429  k9s
+12430  k9s
+12431  brew install lima
+12432  which lima
+12433  rgf
+12434  brew install ripgrep
+12435  rgf
+12436  brew install ffp
+12437  brew install fpp
+12438  which lima
+12439  which limactl
+12440  ping 192.168.5.15
+12441  http :16433
+12442  lima htop
+12443  limy kubectl version
+12444  lima kubectl version
+12445  cd ..
+12446  lima microk8s config
+12447  lima sudo microk8s config
+12448  lima sudo microk8s config > lima.yaml
+12449  code lima.yaml 
+12450  kubectl --kubeconfig lima.yaml get nodes
+12451  kubectl --kubeconfig lima.yaml get nodes
+12452  k9s --help
+12453  k9s --kubeconfig lima.yaml
+12454  k9s --kubeconfig lima.yaml
+12455  ssh rene@renes-imac
+12456  brew link --overwrite --dry-run asciidoctor
+12457  ls -la /usr/local/bin/asciidoctor
+12458  brew link --overwrite asciidoctor
+12459  k9s
+12460  k9s
+12461  kc get all --all-namespaces 
+12462  kn docker-registry 
+12463  helm uninstall docker-registry 
+12464  cd dotfiles/config/helm/docker-registry/
+12465  ls
+12466  helm template --values values.yaml twuni/docker-registry
+12467  vim values.yaml 
+12468  helm template --values values.yaml twuni/docker-registry
+12469  helm install --values values.yaml twuni/docker-registry
+12470  helm install --values values.yaml docker-registry twuni/docker-registry
+12471  k9s
+12472  helm template --values values.yaml twuni/docker-registry
+12473  cat values.yaml 
+12474  brew install vim
+12475  vim values.yaml 
+12476  helm template --values values.yaml twuni/docker-registry
+12477  helm uninstall docker-registry 
+12478  helm install --values values.yaml docker-registry twuni/docker-registry
+12479  k9s
+12480  date
+12481  http :32000
+12482  docker push localhost:32000/registry
+12483  limactl shell colima 
+12484  k9s
+12485  htop
+12486  git add values.yaml 
+12487  git commit -m "Create parameters for nodeport based registry deployment"
+12488  git push
+12489  git pull
+12490  git pull
+12491  git pull
+12492  ls
+12493  helm repo add twuni https://helm.twun.io
+12494  helm repo update 
+12495  cd config/helm/docker-registry/
+12496  helm install --values values.yaml --namespace docker-registry --create-namespace twuni/docker-registry
+12497  helm install --values values.yaml --namespace docker-registry --create-namespace docker-registry twuni/docker-registry
+12498  reg help
+12499  reg manifest registry.jetbrains.team/p/prj/containers/projector-idea-u
+12500  gcloud 
+12501  gcloud login
+12502  brew update
+12503  history
+12504  cd prepare/
+12505  ls
+12506  unzip /Users/rene/Downloads/demo.zip 
+12507  history 
+
