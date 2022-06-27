@@ -18,3 +18,9 @@ fi
 [ -r "${HOME}/dotfiles/rc.d/9-final.bash" ] && source "${HOME}/dotfiles/rc.d/9-final.bash"
 
 # [ -x "$(brew --prefix)/bin/starship" ] && eval "$(starship init zsh)"
+
+# https://twitter.com/holly_cummins/status/1540330150205612032
+# https://github.com/gbirke/oh-my-zsh-customizations/blob/b6e266078655d7c96846faaa7da7be18ea9e7a05/mkcd.zsh
+mcd() {
+    mkdir -p "$*"; cd "$*"
+}
