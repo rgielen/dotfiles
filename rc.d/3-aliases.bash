@@ -24,6 +24,11 @@ alias myip="ipconfig getifaddr en0"
 alias speedtest='curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
 alias icloud="brctl log --wait --shorten"
 
+# svn: add all unversioned files
+# https://stackoverflow.com/questions/1071857/how-do-i-svn-add-all-unversioned-files-to-svn
+alias addall="svn add --force * --auto-props --parents --depth infinity"
+alias svnaddall="svn add --force * --auto-props --parents --depth infinity"
+
 alias dcomp='docker-compose'
 
 # Highlight matches for GREP
