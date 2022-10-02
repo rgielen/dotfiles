@@ -43,18 +43,16 @@ if [ -x /usr/libexec/java_home ]
 then
     alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
     alias jdk11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
-    alias jdk16="export JAVA_HOME=$(/usr/libexec/java_home -v 16)"
-    alias jdk17="export JAVA_HOME=$(/usr/libexec/java_home -v 17)"
     alias jdk18="export JAVA_HOME=$(/usr/libexec/java_home -v 18)"
+    alias jdk19="export JAVA_HOME=$(/usr/libexec/java_home -v 19)"
     alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
     alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
-    alias mvn16="JAVA_HOME=$(/usr/libexec/java_home -v 16) mvn"
-    alias mvn17="JAVA_HOME=$(/usr/libexec/java_home -v 17) mvn"
     alias mvn18="JAVA_HOME=$(/usr/libexec/java_home -v 18) mvn"
+    alias mvn19="JAVA_HOME=$(/usr/libexec/java_home -v 18) mvn"
     alias mvnd8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvnd"
     alias mvnd11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvnd"
-    alias mvnd17="JAVA_HOME=$(/usr/libexec/java_home -v 17) mvnd"
     alias mvnd18="JAVA_HOME=$(/usr/libexec/java_home -v 18) mvnd"
+    alias mvnd19="JAVA_HOME=$(/usr/libexec/java_home -v 18) mvnd"
 fi
 
 # bat integration
