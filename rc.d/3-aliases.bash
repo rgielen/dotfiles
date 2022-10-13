@@ -58,6 +58,13 @@ then
     alias mvnd19="JAVA_HOME=$(/usr/libexec/java_home -v 19) mvnd"
 fi
 
+export GRAALVM17_HOME=$(find /Library/Java/JavaVirtualMachines -name "graalvm-ce-java17*")
+if [ -d $GRAALVM17_HOME ]; then
+    alias gjdk17="export JAVA_HOME=$GRAALVM17_HOME/Contents/Home"
+    alias gmvn17="JAVA_HOME=$GRAALVM17_HOME/Contents/Home mvn"
+    alias gmvnd17="JAVA_HOME=$GRAALVM17_HOME/Contents/Home mvnd"
+fi
+
 # bat integration
 if command -v bat &> /dev/null
 then
