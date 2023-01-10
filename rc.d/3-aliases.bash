@@ -75,6 +75,10 @@ fi
 # fzf
 alias fzq="fzf -q"
 
+# Terraform
+alias tfa="terraform apply"
+alias tfaa="terraform apply -auto-approve"
+
 # K8s
 alias kc=kubectl
 alias kx=kubectx
