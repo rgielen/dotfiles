@@ -7,7 +7,7 @@ export LANG="en_US"
 export MAVEN_OPTS="-Xms512M -Xmx2048M"
 if [ -x /usr/libexec/java_home ]
 then
-    export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+    export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 else
     export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
 fi
