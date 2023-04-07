@@ -21,6 +21,10 @@ fi
 #    source <(kubectl completion bash)
 #fi
 
+if [ -x "$(command -v kubectl)" ]; then
+    kubectl argo rollouts version &> /dev/null && source <(kubectl argo rollouts completion bash)
+fi
+
 if [ -f "$BREW_PREFIX"/bin/limactl ]; then
   source <("$BREW_PREFIX"/bin/limactl completion bash)
 fi
