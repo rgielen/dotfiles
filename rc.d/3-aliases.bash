@@ -44,25 +44,25 @@ then
     alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
     alias jdk11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
     alias jdk17="export JAVA_HOME=$(/usr/libexec/java_home -v 17)"
-    alias jdk19="export JAVA_HOME=$(/usr/libexec/java_home -v 19)"
     alias jdk20="export JAVA_HOME=$(/usr/libexec/java_home -v 20)"
+    alias jdk21="export JAVA_HOME=$(/usr/libexec/java_home -v 21)"
     alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
     alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
     alias mvn17="JAVA_HOME=$(/usr/libexec/java_home -v 17) mvn"
-    alias mvn19="JAVA_HOME=$(/usr/libexec/java_home -v 19) mvn"
     alias mvn20="JAVA_HOME=$(/usr/libexec/java_home -v 20) mvn"
+    alias mvn21="JAVA_HOME=$(/usr/libexec/java_home -v 21) mvn"
     alias mvnd8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvnd"
     alias mvnd11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvnd"
     alias mvnd17="JAVA_HOME=$(/usr/libexec/java_home -v 17) mvnd"
-    alias mvnd19="JAVA_HOME=$(/usr/libexec/java_home -v 19) mvnd"
     alias mvnd20="JAVA_HOME=$(/usr/libexec/java_home -v 20) mvnd"
+    alias mvnd21="JAVA_HOME=$(/usr/libexec/java_home -v 21) mvnd"
 fi
 
-export GRAALVM17_HOME=$(find /Library/Java/JavaVirtualMachines -name "graalvm-ce-java17*")
-if [ -d $GRAALVM17_HOME ]; then
-    alias gjdk17="export JAVA_HOME=$GRAALVM17_HOME/Contents/Home"
-    alias gmvn17="JAVA_HOME=$GRAALVM17_HOME/Contents/Home mvn"
-    alias gmvnd17="JAVA_HOME=$GRAALVM17_HOME/Contents/Home mvnd"
+export GRAALVM_HOME=$(find /Library/Java/JavaVirtualMachines -name "graalvm-jdk-21*")
+if [ -d $GRAALVM_HOME ]; then
+    alias gjdk="export JAVA_HOME=$GRAALVM_HOME/Contents/Home"
+    alias gmvn="JAVA_HOME=$GRAALVM_HOME/Contents/Home mvn"
+    alias gmvnd="JAVA_HOME=$GRAALVM_HOME/Contents/Home mvnd"
 fi
 
 # bat integration

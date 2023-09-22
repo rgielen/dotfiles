@@ -27,7 +27,7 @@ fi
 
 # IntelliJ IDEA > 2023.1
 if [ -d "/Applications/IntelliJ IDEA.app/Contents/MacOS" ]; then
-    export PATH=$PATH:"/Applications/IntelliJ IDEA.app/Contents/MacOS"
+    export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS":$PATH
 fi
 
 # Go
