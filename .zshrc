@@ -3,7 +3,7 @@
 export SHELL=$(which zsh)
 
 export CURL_SSL_BACKEND="secure-transport"
-ulimit -n 65536 200000
+ulimit -n 65536 -f unlimited
 
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
