@@ -6,7 +6,7 @@ export CURL_SSL_BACKEND="secure-transport"
 ulimit -n 65536 -f unlimited
 
 if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    FPATH=$(brew --prefix)/share/zsh-completions:$(brew --prefix)/share/zsh/site-functions:$FPATH
 
     autoload -Uz compinit
     compinit
