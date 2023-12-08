@@ -1,3 +1,7 @@
+if command -v direnv &> /dev/null; then
+    eval "$(direnv hook zsh)"
+fi
+
 if command -v switcher &> /dev/null; then 
     source <(switcher init bash)
     alias s=switch
