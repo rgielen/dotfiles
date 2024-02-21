@@ -38,6 +38,9 @@ if [ -f $HOMEBREW_PREFIX/bin/thefuck ]; then
     eval $(thefuck --alias oops)
 fi
 
+# Midnight Commander Speedup
+alias mc="mc --nosubshell"
+
 # JDK
 if [ -x /usr/libexec/java_home ]
 then
