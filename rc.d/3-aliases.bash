@@ -41,6 +41,12 @@ fi
 # Midnight Commander Speedup
 alias mc="mc --nosubshell"
 
+# PSSH
+alias pssh="pssh -OStrictHostKeyChecking=no"
+alias psshi="pssh -OStrictHostKeyChecking=no -i"
+alias psshh="pssh -OStrictHostKeyChecking=no -h"
+alias psshih="pssh -OStrictHostKeyChecking=no -i -h"
+
 # JDK
 if [ -x /usr/libexec/java_home ]
 then
