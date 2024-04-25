@@ -25,11 +25,6 @@ fi
 # Add $HOME/bin to path
 [ -d $HOME/bin ] && export PATH=$PATH:$HOME/bin
 
-# IntelliJ IDEA > 2023.1
-if [ -d "/Applications/IntelliJ IDEA.app/Contents/MacOS" ]; then
-    export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS":$PATH
-fi
-
 # Go
 export GOPATH=~/DevHome/go
 [ ! -d "$GOPATH" ] && mkdir -p "$GOPATH"

@@ -74,6 +74,20 @@ if [ -d $GRAALVM_HOME ]; then
     alias gmvnd="JAVA_HOME=$GRAALVM_HOME/Contents/Home mvnd"
 fi
 
+# IntelliJ IDEA > 2023.1
+if [ -d "/Applications/IntelliJ IDEA.app/Contents/MacOS" ]; then
+    alias idea="open -na \"IntelliJ IDEA.app\" --args"
+fi
+
+if [ -d "${HOME}/Applications/IntelliJ IDEA Community Edition.app" ]; then
+    alias ideace="open -na \"IntelliJ IDEA Community Edition.app\" --args"
+fi
+
+if [ -d "${HOME}/Applications/IntelliJ IDEA Ultimate.app" ]; then
+    alias ideaul="open -na \"IntelliJ IDEA Ultimate.app\" --args"
+fi
+
+
 # bat integration
 if command -v bat &> /dev/null
 then
