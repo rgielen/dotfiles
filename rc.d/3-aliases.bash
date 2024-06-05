@@ -77,6 +77,8 @@ fi
 # IntelliJ IDEA > 2023.1
 if [ -d "/Applications/IntelliJ IDEA.app/Contents/MacOS" ]; then
     alias idea="open -na \"IntelliJ IDEA.app\" --args"
+elif [ -d "${HOME}/Applications/IntelliJ IDEA Ultimate.app" ]; then
+    alias idea="open -na \"IntelliJ IDEA Ultimate.app\" --args"
 fi
 
 if [ -d "${HOME}/Applications/IntelliJ IDEA Community Edition.app" ]; then
