@@ -113,7 +113,8 @@ symbol = " "
 disabled = true
 
 [hostname]
-ssh_symbol = " "
+ssh_symbol = ""
+format = '[$ssh_symbol$hostname]($style) '
 
 [java]
 format = ' | [${symbol}(${version} )]($style)'
@@ -271,6 +272,9 @@ style = "red"
 [swift]
 symbol = " "
 disabled = true
+
+[username]
+format = '[$user]($style) '
 
 [zig]
 symbol = " "
