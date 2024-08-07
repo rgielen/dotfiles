@@ -1,5 +1,6 @@
 format = "$os$all$java$package$kubernetes$line_break$status$direnv$shell$sudo$character"
 add_newline = true
+command_timeout = 500000
 
 [character]
 success_symbol = '[➜](bold green)'
@@ -134,6 +135,7 @@ disabled = false
 disabled = false
 format = ' | [$symbol$context( \($namespace\))]($style)'
 style = 'blue'
+symbol = "󱃾 "
 
 [kubernetes.context_aliases]
 "nuk.rgielen.com" = "nuk"
