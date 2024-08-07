@@ -49,6 +49,7 @@ format = ' | [$symbol$context]($style)'
 [cmd_duration]
 min_time = 1000 # ms
 format = ' |  [$duration]($style)'
+style = "yellow dimmed"
 show_milliseconds = true
 
 [elixir]
