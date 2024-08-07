@@ -1,5 +1,5 @@
 if command -v direnv &> /dev/null; then
-    eval "$(direnv hook bash)"
+    eval "$(direnv hook zsh)"
 fi
 
 if command -v mcfly &> /dev/null; then 

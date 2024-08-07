@@ -7,7 +7,7 @@ alias .....="cd ../../../.."
 # Shortcuts
 alias g="git"
 alias h="history"
-alias l="ls -l"
+alias l="eza -h"
 alias la="ls -lahT"
 alias ls="command ls -G"
 
@@ -53,21 +53,21 @@ then
     alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
     alias jdk11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
     alias jdk17="export JAVA_HOME=$(/usr/libexec/java_home -v 17)"
-    alias jdk20="export JAVA_HOME=$(/usr/libexec/java_home -v 20)"
     alias jdk21="export JAVA_HOME=$(/usr/libexec/java_home -v 21)"
+    alias jdk22="export JAVA_HOME=$(/usr/libexec/java_home -v 22)"
     alias mvn8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvn"
     alias mvn11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvn"
     alias mvn17="JAVA_HOME=$(/usr/libexec/java_home -v 17) mvn"
-    alias mvn20="JAVA_HOME=$(/usr/libexec/java_home -v 20) mvn"
     alias mvn21="JAVA_HOME=$(/usr/libexec/java_home -v 21) mvn"
+    alias mvn22="JAVA_HOME=$(/usr/libexec/java_home -v 22) mvn"
     alias mvnd8="JAVA_HOME=$(/usr/libexec/java_home -v 1.8) mvnd"
     alias mvnd11="JAVA_HOME=$(/usr/libexec/java_home -v 11) mvnd"
     alias mvnd17="JAVA_HOME=$(/usr/libexec/java_home -v 17) mvnd"
-    alias mvnd20="JAVA_HOME=$(/usr/libexec/java_home -v 20) mvnd"
     alias mvnd21="JAVA_HOME=$(/usr/libexec/java_home -v 21) mvnd"
+    alias mvnd22="JAVA_HOME=$(/usr/libexec/java_home -v 22) mvnd"
 fi
 
-export GRAALVM_HOME=$(find /Library/Java/JavaVirtualMachines -name "graalvm-jdk-21*")
+export GRAALVM_HOME=$(find /Library/Java/JavaVirtualMachines -name "graalvm-21.jdk*")
 if [ -d $GRAALVM_HOME ]; then
     alias gjdk="export JAVA_HOME=$GRAALVM_HOME/Contents/Home"
     alias gmvn="JAVA_HOME=$GRAALVM_HOME/Contents/Home mvn"
@@ -93,16 +93,31 @@ fi
 # bat integration
 if command -v bat &> /dev/null
 then
-    alias fzf="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+    if command -v fzf &> /dev/null; then
+        alias fzf="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+    fi
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 
 # fzf
-alias fzq="fzf -q"
+if command -v fzf &> /dev/null; then
+    alias fzq="fzf -q"
+fi
 
 # Terraform
-alias tfa="terraform apply"
-alias tfaa="terraform apply -auto-approve"
+if command -v terraform &> /dev/null
+then
+    alias tfa="terraform apply"
+    alias tfaa="terraform apply -auto-approve"
+fi
+if command -v tofu &> /dev/null
+then
+    alias terraform="tofu"
+    alias tfa="tofu apply"
+    alias tfaa="tofu apply -auto-approve"
+fi
+
+
 
 # K8s
 alias kc=kubectl
