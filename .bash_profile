@@ -1,5 +1,4 @@
-# Load ~/.bash_prompt (Script deleted from git 2021-08-30)
-[ -r "~/dotfiles/.bash_prompt" ] && source "~/dotfiles/.bash_prompt"
+export SHELL_TYPE="bash"
 
 # Include snippets in rc.d
 for file in ~/dotfiles/rc.d/*.bash; do

@@ -3,6 +3,11 @@ export LC_ALL="en_US.UTF-8"
 export LC_CTYPE=en_US.UTF-8
 export LANG="en_US"
 
+# execute only if SHELL_TYPE variable is not set
+if [ -z "$SHELL_TYPE" ] ; then
+    export SHELL_TYPE=$(basename $SHELL)
+fi
+
 # Java Environment
 export MAVEN_OPTS="-Xms512M -Xmx2048M"
 if [ -x /usr/libexec/java_home ]
@@ -12,12 +17,8 @@ else
     export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
 fi
 
-if command -v mvnd &> /dev/null && command -v greadlink &> /dev/null
-then
-    export MVND_HOME=$(dirname $(dirname $(greadlink -f $(which mvnd))))
-    if ps -p $$ | grep -q bash; then
-        source $MVND_HOME/libexec/bin/mvnd-bash-completion.bash
-    fi
+if command -v mvnd &> /dev/null && [ "${SHELL_TYPE}" = "bash" ]; then
+    source <(mvnd --completion bash)
 fi
 
 # Make ´vim the default editor
