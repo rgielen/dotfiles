@@ -28,3 +28,7 @@ fi
 if [ -f "$BREW_PREFIX"/bin/limactl ]; then
   source <("$BREW_PREFIX"/bin/limactl completion bash)
 fi
+
+if command -v chezmoi &> /dev/null; then
+    source <(chezmoi completion ${SHELL_TYPE})
+fi
